@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+block scripts
+  // jQuery (necessary for Bootstrap's JavaScript plugins)
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  // Include all compiled plugins (below), or include individual files as needed
+  script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
