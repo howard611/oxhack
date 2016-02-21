@@ -1,8 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  a.mlh-trust-badge(href='https://mlh.io/?utm_campaign=Trust%20Badge', target='_blank')
+    img(src='https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png', alt='MLH Official - Spring 2016')
+  section#animation
+    .jumbotron
+      .container
+        h1= title
+        p Welcome to #{title}
+        a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=https%3A%2F%2Fwww.google.co.uk%2F&response_type=token') Apply Now
+  section#about
+    .container
+      
   
 block scripts
   // jQuery (necessary for Bootstrap's JavaScript plugins)

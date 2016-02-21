@@ -1,8 +1,32 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.jumbotron {
+  height: 500px;
+  background-color: #22313F;
+  color: #E4F1FE;
+}
+
+#about {
+  background-color: #34495E;
+}
+
+.mlh-trust-badge {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  max-width: 100px;
+  width: 10%;
+  min-width: 60px;
+  display: block;
+  z-index: 1000;
+
+  img {
+    width: 100%;
+  }
 }
