@@ -1,5 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #34495E;
+  cursor: url(./cursor.svg), auto;
 }
 
 a {
@@ -7,7 +9,7 @@ a {
 }
 
 .jumbotron {
-  height: 500px;
+  height: 650px;
   background-color: #22313F;
   color: #E4F1FE;
 }
