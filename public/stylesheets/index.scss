@@ -18,7 +18,7 @@ $font_0: sans-serif;
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   // background-color: #34495E;
   cursor: url(./cursor.svg), auto;
 }
@@ -32,16 +32,31 @@ a {
   background-color: #22313F;
   color: #E4F1FE;
   margin-bottom: 0px;
+  h1 {
+    font-size: 10em;
+  }
 }
 
 #about {
   background-color: #34495E;
   color: #fff;
   padding: 45px;
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
 
 #faq {
   padding-top: 50px;
+  h1 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2em;
+  }
 }
 
 #map-container {

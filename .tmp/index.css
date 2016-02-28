@@ -6,7 +6,7 @@
   font-family: MagicSchoolOne; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   cursor: url(./cursor.svg), auto; }
 
 a {
@@ -17,14 +17,24 @@ a {
   background-color: #22313F;
   color: #E4F1FE;
   margin-bottom: 0px; }
+  .jumbotron h1 {
+    font-size: 10em; }
 
 #about {
   background-color: #34495E;
   color: #fff;
   padding: 45px; }
+  #about h1 {
+    font-size: 4em; }
+  #about p {
+    font-size: 1.5em; }
 
 #faq {
   padding-top: 50px; }
+  #faq h1 {
+    font-size: 4em; }
+  #faq h3 {
+    font-size: 2em; }
 
 #map-container {
   height: 400px;
