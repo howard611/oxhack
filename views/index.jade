@@ -21,9 +21,7 @@ block content
       .row
         .col-md-12
           h1.text-center Where does this take place?
-  section#map-container
-    .container-fluid
-      iframe(src='https://www.google.com/maps/embed/v1/place?q=Said%20Business%20School,%20UK&zoom=17&key=AIzaSyCQBQv3v6U9GuevyPmkD9hO9sOTSBU-4oQ')
+  section#map-container.container-fluid
   section#faq
     .container
       .row
@@ -88,4 +86,6 @@ block scripts
   // Include all compiled plugins (below), or include individual files as needed
   script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
   // Custom JS
-  script(src='javascripts/canvas.js')
+  script(src='javascripts/main.js')
+  // Load Google Maps Api
+  script(src='https://maps.googleapis.com/maps/api/js?callback=initMap', async='', defer='')
