@@ -1,3 +1,13 @@
+//colors
+$color_baltic_sea_approx: #292c2f;
+$black_12: rgba(0, 0, 0, 0.12);
+$color_oslo_gray_approx: #8d9093;
+$color_mountain_mist_approx: #8f9296;
+$white: #ffffff;
+
+//fonts
+$font_0: sans-serif;
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   // background-color: #34495E;
@@ -31,4 +41,51 @@ a {
   img {
     width: 100%;
   }
+}
+
+/////////////////////////////////////// FOOTER /////////////////////////////////////
+.footer-center {
+	background-color: $color_baltic_sea_approx;
+	box-shadow: 0 1px 1px 0 $black_12;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px $font_0;
+	padding: 45px;
+	margin-top: 80px;
+	.footer-joinus {
+		color: $color_oslo_gray_approx;
+		font-size: 24px;
+		margin: 0;
+	}
+	.footer-copyright {
+		color: $color_mountain_mist_approx;
+		font-size: 14px;
+		margin: 0;
+	}
+  a {
+  	display: inline-block;
+  	width: 35px;
+  	height: 35px;
+  	border-radius: 2px;
+
+  	font-size: 20px;
+  	color: #ffffff;
+  	text-align: center;
+  	line-height: 35px;
+
+  	margin-left: 3px;
+  }
+}
+
+@media(max-width: 600px) {
+	.footer-center {
+		padding: 35px;
+		.footer-joinus {
+			font-size: 18px;
+		}
+		.footer-copyright {
+			font-size: 12px;
+		}
+	}
 }
