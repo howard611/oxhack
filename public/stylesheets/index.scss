@@ -8,6 +8,15 @@ $white: #ffffff;
 //fonts
 $font_0: sans-serif;
 
+@font-face {
+  font-family: MagicSchoolOne;
+  src: url(../fonts/MagicSchoolOne.ttf);
+}
+
+* {
+  font-family: MagicSchoolOne;
+}
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   // background-color: #34495E;

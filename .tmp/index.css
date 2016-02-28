@@ -1,3 +1,10 @@
+@font-face {
+  font-family: MagicSchoolOne;
+  src: url(../fonts/MagicSchoolOne.ttf); }
+
+* {
+  font-family: MagicSchoolOne; }
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   cursor: url(./cursor.svg), auto; }
