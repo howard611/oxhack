@@ -19,15 +19,26 @@ a {
   margin-bottom: 0px; }
   .jumbotron h1 {
     font-size: 10em; }
+    @media all and (max-width: 800px) {
+      .jumbotron h1 {
+        font-size: 4em; } }
+  .jumbotron .container {
+    position: absolute;
+    bottom: 200px;
+    width: 100%; }
 
-#about {
-  background-color: #34495E;
+#about, #sponsors, #resources {
+  background-color: #527293;
   color: #fff;
   padding: 45px; }
-  #about h1 {
+  #about h1, #sponsors h1, #resources h1 {
     font-size: 4em; }
-  #about p {
+  #about p, #sponsors p, #resources p {
     font-size: 1.5em; }
+
+#sponsors {
+  background-color: transparent;
+  color: #333333; }
 
 #faq {
   padding-top: 50px; }
@@ -53,6 +64,19 @@ a {
   .mlh-trust-badge img {
     width: 100%; }
 
+#resources .logo {
+  width: 195px;
+  height: 50px;
+  text-align: center; }
+  #resources .logo .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  #resources .logo a img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle; }
+
 .footer-center {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -60,8 +84,7 @@ a {
   width: 100%;
   text-align: center;
   font: normal 18px sans-serif;
-  padding: 45px;
-  margin-top: 80px; }
+  padding: 45px; }
   .footer-center .footer-joinus {
     color: #8d9093;
     font-size: 24px;
