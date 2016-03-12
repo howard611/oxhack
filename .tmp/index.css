@@ -29,7 +29,7 @@ a {
 
 #about, #sponsors, #resources {
   background-color: #527293;
-  color: #fff;
+  color: #E4F1FE;
   padding: 45px; }
   #about h1, #sponsors h1, #resources h1 {
     font-size: 4em; }
@@ -67,7 +67,8 @@ a {
 #resources .logo {
   width: 195px;
   height: 50px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 35px; }
   #resources .logo .helper {
     display: inline-block;
     height: 100%;
