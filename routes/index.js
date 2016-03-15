@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'OxfordHack' });
 });
 
+router.get('/success', function(req, res, next) {
+  res.render('complete');
+});
+
 module.exports = router;
