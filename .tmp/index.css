@@ -46,10 +46,11 @@ img#bg {
   #about h1, #sponsors h1, #resources h1 {
     font-size: 4em; }
   #about p, #sponsors p, #resources p {
-    font-size: 1.5em; }
+    font-size: 1em; }
 
 #about {
-  height: 750px; }
+  height: 750px;
+  margin-top: 40px; }
 
 #sponsors {
   background-color: transparent;
