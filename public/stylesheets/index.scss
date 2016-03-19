@@ -34,9 +34,20 @@ a {
   color: #00B7FF;
 }
 
+img#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // Preserve aspect ratio
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .jumbotron {
-  height: 650px;
-  background-color: #22313F;
+  height: 700px;
+  background-color: transparent;
   color: #E4F1FE;
   margin-bottom: 0px;
   h1 {
@@ -53,7 +64,7 @@ a {
 }
 
 #about, #sponsors, #resources {
-  background-color: #527293;
+  background-color: transparent;
   color: #E4F1FE;
   padding: 45px;
   h1 {
@@ -62,6 +73,14 @@ a {
   p {
     font-size: 1.5em;
   }
+}
+
+#about {
+  height: 750px;
+}
+
+#map-container {
+  height: 950px;
 }
 
 #sponsors {
@@ -101,6 +120,8 @@ a {
 }
 
 #resources {
+  color: #333333;
+
   .logo {
     width: 195px;
     height: 50px;
@@ -128,7 +149,7 @@ a {
 
 /////////////////////////////////////// FOOTER /////////////////////////////////////
 .footer-center {
-	background-color: $color_baltic_sea_approx;
+	background-color: transparent;
 	box-shadow: 0 1px 1px 0 $black_12;
 	box-sizing: border-box;
 	width: 100%;
