@@ -30,10 +30,13 @@ img#bg {
   color: #E4F1FE;
   margin-bottom: 0px; }
   .jumbotron h1 {
-    font-size: 10em; }
+    font-size: 10em;
+    opacity: 0; }
     @media all and (max-width: 800px) {
       .jumbotron h1 {
         font-size: 4em; } }
+  .jumbotron a {
+    opacity: 0; }
   .jumbotron .container {
     position: absolute;
     bottom: 200px;

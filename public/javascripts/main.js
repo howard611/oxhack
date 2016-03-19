@@ -44,3 +44,7 @@ function initMap() {
     return window.open("https://www.google.co.uk/maps/place/Sa%C3%AFd+Business+School/@51.7531829,-1.267478,17z/data=!4m2!3m1!1s0x4876c6d19df140c7:0xbbcbc03b129c4eab", "_blank");
   });
 }
+
+$(document).ready(function() {
+  $('#canvas h1, #canvas a').delay(1000).animate({ opacity: 1 }, 700);
+});
