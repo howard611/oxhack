@@ -22,7 +22,7 @@ $breakpoint-mobile: 800px;
 
 body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
-  // background-color: #34495E;
+  background-color: #000;
   cursor: url(./cursor.svg), auto;
 }
 
@@ -100,6 +100,8 @@ img#bg {
   padding: 0;
   margin-top: 275px;
   margin-bottom: 275px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .mlh-trust-badge {
