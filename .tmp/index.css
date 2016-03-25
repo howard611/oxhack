@@ -18,6 +18,12 @@ html, body {
 a {
   color: #00B7FF; }
 
+.bgwidth {
+  width: 100%; }
+
+.bgheight {
+  height: 100%; }
+
 img#bg {
   position: absolute;
   top: 0;

@@ -50,4 +50,19 @@ $(document).ready(function() {
   $('#canvas a').delay(1400).animate({ opacity: 1 }, 1000);
 
   $('#canvas img').on('dragstart', function(event) { event.preventDefault(); });
+
+  // Responsive background image
+  var theWindow = $(window);
+  var $bg = $('#bg');
+  var aspectRatio = $bg.width() / $bg.height();
+
+  function resizeBg() {
+    if ((theWindow.width() / theWindow.height()) < aspectRatio) {
+      $bg.removeClass().addClass('bgheight');
+    } else {
+      $bg.removeClass().addClass('bgwidth');
+    }
+  }
+
+  theWindow.resize(resizeBg).trigger('resize');
 });
