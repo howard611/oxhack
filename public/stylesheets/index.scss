@@ -2,7 +2,7 @@
 $color_baltic_sea_approx: #292c2f;
 $black_12: rgba(0, 0, 0, 0.12);
 $color_oslo_gray_approx: #8d9093;
-$color_mountain_mist_approx: #8f9296;
+$color_mountain_mist_approx: #b3bbc8;
 $white: #ffffff;
 
 //fonts
@@ -78,7 +78,6 @@ img#bg {
 
 #about, #sponsors, #resources {
   background-color: transparent;
-  color: #E4F1FE;
   padding: 45px;
   h1 {
     font-size: 4em;
@@ -91,16 +90,18 @@ img#bg {
 #about {
   height: 750px;
   margin-top: 40px;
+  color: #E4F1FE;
 }
 
 #sponsors {
   background-color: transparent;
-  color: #333333;
+  color: #494c52;
 }
 
 #faq {
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #494c52;
   h1 {
     font-size: 4em;
   }
@@ -139,7 +140,7 @@ img#bg {
 }
 
 #resources {
-  color: #333333;
+  color: #494c52;
 
   .logo {
     width: 195px;
@@ -180,12 +181,12 @@ img#bg {
   position: relative;
   margin-top: 0px;
 	.footer-joinus {
-		color: $color_oslo_gray_approx;
+		color: #494c52;
 		font-size: 24px;
 		margin: 0;
 	}
 	.footer-copyright {
-		color: $color_mountain_mist_approx;
+		color: #494c52;
 		font-size: 14px;
 		margin: 0;
 	}
@@ -196,7 +197,7 @@ img#bg {
   	border-radius: 2px;
 
   	font-size: 20px;
-  	color: #ffffff;
+  	color: $color_mountain_mist_approx;
   	text-align: center;
   	line-height: 35px;
 

@@ -51,7 +51,6 @@ img#bg {
 
 #about, #sponsors, #resources {
   background-color: transparent;
-  color: #E4F1FE;
   padding: 45px; }
   #about h1, #sponsors h1, #resources h1 {
     font-size: 4em; }
@@ -60,15 +59,17 @@ img#bg {
 
 #about {
   height: 750px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  color: #E4F1FE; }
 
 #sponsors {
   background-color: transparent;
-  color: #333333; }
+  color: #494c52; }
 
 #faq {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  color: #494c52; }
   #faq h1 {
     font-size: 4em; }
   #faq h3 {
@@ -99,7 +100,7 @@ img#bg {
     width: 100%; }
 
 #resources {
-  color: #333333; }
+  color: #494c52; }
   #resources .logo {
     width: 195px;
     height: 50px;
@@ -131,11 +132,11 @@ img#bg {
   position: relative;
   margin-top: 0px; }
   .footer-center .footer-joinus {
-    color: #8d9093;
+    color: #494c52;
     font-size: 24px;
     margin: 0; }
   .footer-center .footer-copyright {
-    color: #8f9296;
+    color: #494c52;
     font-size: 14px;
     margin: 0; }
   .footer-center a {
@@ -144,7 +145,7 @@ img#bg {
     height: 35px;
     border-radius: 2px;
     font-size: 20px;
-    color: #ffffff;
+    color: #b3bbc8;
     text-align: center;
     line-height: 35px;
     margin-left: 3px; }
