@@ -52,16 +52,28 @@ $(document).ready(function() {
   $('#canvas img').on('dragstart', function(event) { event.preventDefault(); });
 
   // Responsive background image
+
+  function aspectRatio(selector) {
+    return selector.width() / selector.height();
+  }
+
   var theWindow = $(window);
   var $bg = $('#bg');
-  var aspectRatio = $bg.width() / $bg.height();
 
   function resizeBg() {
-    if ((theWindow.width() / theWindow.height()) < aspectRatio) {
-      $bg.removeClass().addClass('bgheight');
+    if ((theWindow.width() / theWindow.height()) < aspectRatio($bg)) {
+      $bg.css("height", "100%");
     } else {
-      $bg.removeClass().addClass('bgwidth');
+      $bg.css("width", "100%");
     }
+    // var newJumboHeight = theWindow.width() / (1280 / parseFloat($('.jumbotron').css('height')));
+    // var oldHeight = $('.jumbotron').css('height');
+    // console.log('changing height');
+    // console.log(theWindow.width());
+    // console.log(newJumboHeight);
+    // $('.jumbotron').css({ height: newJumboHeight });
+    //
+    //
   }
 
   theWindow.resize(resizeBg).trigger('resize');
