@@ -18,6 +18,9 @@ html, body {
 a {
   color: #00B7FF; }
 
+img#logo {
+  pointer-events: none; }
+
 img#bg {
   position: absolute;
   top: 0;

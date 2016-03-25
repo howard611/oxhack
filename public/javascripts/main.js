@@ -49,8 +49,6 @@ $(document).ready(function() {
   $('#canvas img').delay(1000).animate({ opacity: 1 }, 700);
   $('#canvas a').delay(1400).animate({ opacity: 1 }, 1000);
 
-  $('#canvas img').on('dragstart', function(event) { event.preventDefault(); });
-
   // Responsive background image
 
   function aspectRatio(selector) {
