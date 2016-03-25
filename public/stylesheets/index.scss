@@ -17,7 +17,10 @@ $breakpoint-mobile: 800px;
 }
 
 * {
-  font-family: MagicSchoolOne;
+  font-family: "AppleSDGothicNeo-Light", "Apple SD Gothic Neo Light", "HelveticaNeue-Light";
+  span {
+    font-family: MagicSchoolOne;
+  }
 }
 
 body {
@@ -81,7 +84,7 @@ img#bg {
     font-size: 4em;
   }
   p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -97,11 +100,16 @@ img#bg {
 
 #faq {
   padding-top: 50px;
+  padding-bottom: 50px;
   h1 {
     font-size: 4em;
   }
   h3 {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-family: "AppleSDGothicNeo-Medium", "AppleSDGothicNeo-Light";
+  }
+  p {
+    font-size: 0.9em;
   }
 }
 
