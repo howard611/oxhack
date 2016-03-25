@@ -46,5 +46,7 @@ function initMap() {
 }
 
 $(document).ready(function() {
-  $('#canvas h1, #canvas a').delay(1000).animate({ opacity: 1 }, 700);
+  $('#canvas img, #canvas a').delay(1000).animate({ opacity: 1 }, 700);
+
+  $('#canvas img').on('dragstart', function(event) { event.preventDefault(); });
 });

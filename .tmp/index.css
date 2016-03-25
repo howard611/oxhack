@@ -29,6 +29,11 @@ img#bg {
   background-color: transparent;
   color: #E4F1FE;
   margin-bottom: 0px; }
+  .jumbotron img {
+    max-width: 60%;
+    opacity: 0;
+    position: relative;
+    top: -30px; }
   .jumbotron h1 {
     font-size: 10em;
     opacity: 0; }
