@@ -57,12 +57,15 @@ $(document).ready(function() {
 
   var theWindow = $(window);
   var $bg = $('#bg');
+  var $overlay = $('#map_overlay');
 
   function resizeBg() {
     if ((theWindow.width() / theWindow.height()) < aspectRatio($bg)) {
       $bg.css("height", "100%");
+      $overlay.css("height", "100%");
     } else {
       $bg.css("width", "100%");
+      $overlay.css("width", "100%");
     }
     // var newJumboHeight = theWindow.width() / (1280 / parseFloat($('.jumbotron').css('height')));
     // var oldHeight = $('.jumbotron').css('height');

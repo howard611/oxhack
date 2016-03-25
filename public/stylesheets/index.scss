@@ -52,6 +52,20 @@ img#bg {
   z-index: -1;
 }
 
+
+img#map_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // Preserve aspect ratio
+  min-width: 100%;
+  min-height: 100%;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
 .jumbotron {
   height: 700px;
   background-color: transparent;
