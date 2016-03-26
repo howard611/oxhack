@@ -3,28 +3,21 @@ extends layout
 block content
   #main
     //canvas#lolcanvas(width='150', height='150', style='position:absolute;z-index:-100;top:0;left:0;width:100%;height:100%')
-    img#bg(src="images/homepage.png")
-    img#map_overlay(src="images/map_overlay.png")
     a.mlh-trust-badge(href='https://mlh.io/?utm_campaign=Trust%20Badge', target='_blank')
       img(src='https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png', alt='MLH Official - Spring 2016')
     section#canvas
       .jumbotron
-        .container.text-center
+        .content
           img#logo(src='images/logo_white.png')
-        .container.text-center
           a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
     section#about
       .container
-        .row
-          .col-xs-12.pull-left
-          .col-xs-12.text-center
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            h3 OxfordHack was first organised in 2015 and this year we are returning with something magical. It's our little gimmick to add a bit more fun to what should already be an awesome weekend.
-    section#map-container.container-fluid
+        .content
+          h3 OxfordHack was first organised in 2015 and this year we are returning with something magical. It's our little gimmick to add a bit more fun to what should already be an awesome weekend.
+    section#map-container
+      .container
+        #overlay
+        #map-here
     section#faq
       .container
         .row
@@ -34,7 +27,7 @@ block content
         .row
           .col-md-4
             h3 What is a Hackathon?
-            p Hackathons are essentially creativity marathons. Thoughts become things. Attendees work in teams of up to four people to create a hack, be it a webapp, hardware or something completely different. 
+            p Hackathons are essentially creativity marathons. Thoughts become things. Attendees work in teams of up to four people to create a hack, be it a webapp, hardware or something completely different.
           .col-md-4
             h3 What if I don't have a team?
             p No need to worry! Part of the fun of a hackathon is meeting new people. We will have time at the beginning of the event for everyone to meet and form teams.
@@ -61,8 +54,7 @@ block content
             p All attendees must bring a valid ID for admission. Other common checklist items include: laptops, sleeping bags, chargers and toiletries.
           .col-md-4
             h3 What if I have another question?
-            p Send us an owl at 
-              a(href='mailto:owl@oxfordhack.com') owl@oxfordhack.com
+            p Send us an owl at #[a(href='mailto:owl@oxfordhack.com') owl@oxfordhack.com]
     section#sponsors
       .container
         .row
@@ -70,7 +62,7 @@ block content
             h1
               span Sponsors
             p OxfordHack gives companies the opportunity to get in touch with some of the most talented university students in Europe.
-            p If you are interested or have any questions feel free to contact us at 
+            p If you are interested or have any questions feel free to contact us at
               a(href='mailto:owl@oxfordhack.com') owl@oxfordhack.com
     section#resources
       .container
@@ -108,14 +100,14 @@ block content
       .container
         .row
           .col-md-12
-            h1 
+            h1
               span Schedule
             p Coming soon!
     section#team
       .container
         .row
           .col-md-12
-            h1 
+            h1
               span Team of Wizards and Witches
             .row
               .col-md-2.logo

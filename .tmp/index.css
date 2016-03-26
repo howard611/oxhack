@@ -18,17 +18,6 @@ html, body {
 a {
   color: #00B7FF; }
 
-img#logo {
-  pointer-events: none; }
-
-img#bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; }
-
 img#map_overlay {
   position: absolute;
   top: 0;
@@ -38,41 +27,55 @@ img#map_overlay {
   z-index: 1;
   pointer-events: none; }
 
+#canvas {
+  background: url(/images/bg/bg_stars.png);
+  background-size: cover; }
+
 .jumbotron {
-  height: 700px;
+  height: 100vh;
   background-color: transparent;
   color: #E4F1FE;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .jumbotron .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .jumbotron img {
-    max-width: 60%;
-    opacity: 0;
-    position: relative;
-    top: -30px; }
-  .jumbotron h1 {
-    font-size: 10em;
-    opacity: 0; }
-    @media all and (max-width: 800px) {
-      .jumbotron h1 {
-        font-size: 4em; } }
+    pointer-events: none;
+    height: 55vh; }
   .jumbotron a {
-    opacity: 0; }
-  .jumbotron .container {
-    position: absolute;
-    bottom: 200px;
-    width: 100%; }
+    background: #00B7FF;
+    color: white;
+    padding: 0.5em 0.75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em; }
 
-#about, #sponsors, #resources {
+#about, #sponsors, #resources, #schedule, #team {
   background-color: transparent;
   padding: 45px; }
-  #about h1, #sponsors h1, #resources h1 {
+  #about h1, #sponsors h1, #resources h1, #schedule h1, #team h1 {
     font-size: 4em; }
-  #about p, #sponsors p, #resources p {
+  #about p, #sponsors p, #resources p, #schedule p, #team p {
     font-size: 0.9em; }
 
 #about {
-  height: 750px;
-  margin-top: 40px;
-  color: #E4F1FE; }
+  background: url(/images/bg/bg_landscape.png);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 400px; }
+  #about .content {
+    min-height: calc(400px - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #about h3 {
+    color: white;
+    text-align: center; }
 
 #sponsors {
   background-color: transparent;
@@ -91,13 +94,31 @@ img#map_overlay {
     font-size: 0.9em; }
 
 #map-container {
-  height: 400px;
   display: block;
-  padding: 0;
-  margin-top: 275px;
-  margin-bottom: 275px;
-  margin-left: 250px;
-  margin-right: 250px; }
+  background: url(/images/bg/bg_animals.png);
+  padding-top: 15em;
+  padding-bottom: 15em;
+  height: calc(400px + 30em); }
+  #map-container #overlay {
+    height: 400px;
+    width: inherit;
+    background: url(/images/map_overlay.png);
+    position: absolute;
+    z-index: 100;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none; }
+  #map-container #map-here {
+    height: 400px;
+    z-index: 50; }
+
+#map-image img {
+  margin-top: calc(-250px + -400px);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: 100; }
 
 .mlh-trust-badge {
   position: fixed;

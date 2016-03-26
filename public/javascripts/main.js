@@ -29,7 +29,7 @@ function initMap() {
     disableDefaultUI: true
   };
 
-  map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-here'), mapOptions);
 
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
