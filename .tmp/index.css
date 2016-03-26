@@ -18,18 +18,16 @@ html, body {
 a {
   color: #00B7FF; }
 
-img#map_overlay {
+front {
+  z-index: 4; }
+
+img#bg {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: 1;
-  pointer-events: none; }
-
-#canvas {
-  background: url(/images/bg/bg_stars.png);
-  background-size: cover; }
+  z-index: -1; }
 
 .jumbotron {
   height: 100vh;
@@ -44,7 +42,8 @@ img#map_overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    z-index: 100; }
   .jumbotron img {
     pointer-events: none;
     height: 55vh; }
@@ -96,9 +95,11 @@ img#map_overlay {
 #map-container {
   display: block;
   background: url(/images/bg/bg_animals.png);
-  padding-top: 15em;
-  padding-bottom: 15em;
-  height: calc(400px + 30em); }
+  background-position: center bottom;
+  background-size: cover;
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  height: calc(400px + 30vw); }
   #map-container #overlay {
     height: 400px;
     width: inherit;
@@ -112,6 +113,11 @@ img#map_overlay {
   #map-container #map-here {
     height: 400px;
     z-index: 50; }
+  @media screen and (max-width: 600px) {
+    #map-container {
+      padding-top: 5em;
+      padding-bottom: 5em;
+      height: calc(400px + 10em); } }
 
 #map-image img {
   margin-top: calc(-250px + -400px);
@@ -190,3 +196,83 @@ img#map_overlay {
       font-size: 18px; }
     .footer-center .footer-copyright {
       font-size: 12px; } }
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 10000px 0; } }
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 10000px 0; } }
+
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 10000px 0; } }
+
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0; }
+  to {
+    background-position: 10000px 0; } }
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.stars {
+  background: #000 url(images/stars.png) repeat top center;
+  z-index: 0; }
+
+.twinkling {
+  background: transparent url(images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite; }
+
+.clouds {
+  background: transparent url(images/clouds.png) repeat top center;
+  z-index: 50;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite; }
