@@ -9,3 +9,6 @@ build
 ###################
 **/test/coverage
 report
+
+.DS_Store
+.public/.DS_Store

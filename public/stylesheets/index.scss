@@ -38,6 +38,7 @@ a {
 }
 
 img#logo {
+  width: 20%;
   pointer-events: none;
 }
 
@@ -89,12 +90,12 @@ img#map_overlay {
   }
   .container {
     position: absolute;
-    bottom: 200px;
+    bottom: 45%;
     width: 100%;
   }
 }
 
-#about, #sponsors, #resources {
+#about, #sponsors, #resources, #schedule, #team {
   background-color: transparent;
   padding: 45px;
   h1 {
