@@ -202,6 +202,8 @@ img#bg {
     color: #595c62;
     font-size: 14px;
     margin: 0; }
+    .footer-center .footer-copyright a {
+      font-family: MagicSchoolOne; }
   .footer-center a {
     display: inline-block;
     width: 35px;
