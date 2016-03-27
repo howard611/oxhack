@@ -335,7 +335,7 @@ img#bg {
   display: block; }
 
 .stars {
-  background: #000 url(images/stars.png) repeat top center;
+  background: #000040 url(images/stars.png) repeat top center;
   z-index: 0; }
 
 .twinkling {
