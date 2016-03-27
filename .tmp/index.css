@@ -5,7 +5,8 @@
 * {
   font-family: "AppleSDGothicNeo-Light", "Apple SD Gothic Neo Light", "HelveticaNeue-Light"; }
   * span {
-    font-family: MagicSchoolOne, sans-serif; }
+    font-family: MagicSchoolOne, sans-serif;
+    color: #797c82; }
 
 body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -103,17 +104,17 @@ img#bg {
 
 #sponsors {
   background-color: transparent;
-  color: #595c62; }
+  color: #797c82; }
 
 #schedule, #team {
-  color: #595c62; }
+  color: #797c82; }
 
 #faq {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 45px;
   padding-right: 45px;
-  color: #595c62; }
+  color: #797c82; }
   #faq h1 {
     font-size: 4em; }
   #faq h3 {
@@ -172,7 +173,7 @@ img#bg {
   padding: 10px; }
 
 #resources {
-  color: #595c62; }
+  color: #797c82; }
   #resources .logo {
     width: 195px;
     height: 50px;
@@ -204,11 +205,11 @@ img#bg {
   position: relative;
   margin-top: 0px; }
   .footer-center .footer-joinus {
-    color: #595c62;
+    color: #797c82;
     font-size: 24px;
     margin: 0; }
   .footer-center .footer-copyright {
-    color: #595c62;
+    color: #797c82;
     font-size: 14px;
     margin: 0; }
     .footer-center .footer-copyright a {
