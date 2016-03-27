@@ -13,8 +13,7 @@ block content
         .content
           img#logo(src='images/logo_white.png')
           h2.glow-on-hover May 14 - 15, 2016
-          h1.glow-on-hover
-            a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxfordhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
+          h1.glow-on-hover: a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxfordhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
     section#about
       .container
         .content
@@ -116,27 +115,23 @@ block content
               span Team of Wizards and Witches
             .row
               .col-md-4.portrait
-                span.helper
                 a(href="mailto:naomi@oxfordhack.com", target='_blank')
-                  <img class="portrait" src="images/naomi_small.gif" width="100%" height="100%" alt="Image size dimensions">
+                  img(class="portrait", src="images/naomi_small.gif", width="100%", height="100%")
               .col-md-3.portrait
-                span.helper
                 a(href="mailto:owl@oxfordhack.com", target='_blank')
-                  <img class="portrait" src="images/kevin.gif" width="100%" height="100%" alt="Image size dimensions">
+                  img(class="portrait", src="images/kevin.gif", width="100%", height="100%")
               .col-md-4.portrait
-                span.helper
                 a(href="mailto:luke@oxfordhack.com", target='_blank')
-                  <img class="portrait" src="images/luke2.gif" width="100%" height="100%" alt="Image size dimensions">
+                  img(class="portrait", src="images/luke2.gif", width="100%", height="100%")
             .row
               .col-md-2.portrait
                 span.helper
                 a(href="mailto:howard@oxfordhack.com", target='_blank')
-                  <img class="portrait" src="images/howard.jpg" width="100%" height="100%" alt="Image size dimensions">
+                  img(class="portrait", src="images/howard.jpg", width="100%", height="100%")
               .col-md-2.portrait
                 span.helper
                 a(href="mailto:charlie@oxfordhack.com", target='_blank')
-                  <img class="portrait" src="images/charlie.png" width="100%" height="100%" alt="Image size dimensions">
-
+                  img(class="portrait", src="images/charlie.png", width="100%", height="100%")
   section#footer
     footer.footer-center
       p.footer-joinus.glow-on-hover
@@ -150,11 +145,7 @@ block content
       p.footer-copyright
         span OxfordHack © 2016
       p.footer-copyright
-        span Created with magic by
-      p.footer-copyright
-        span
-          a(href='') Howard
-          a(href='') Kevin, and a(href='https://github.com/npentrel') Naomi
+        span Created with magic by #[a(href='') Howard], #[a(href='http://twitter.com/_phzn', target="_blank") Kevin], and #[a(href='https://github.com/npentrel') Naomi]
 block scripts
   // jQuery (necessary for Bootstrap's JavaScript plugins)
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')

@@ -46,6 +46,7 @@ a:hover {
   -o-animation: glowing-text 2s linear infinite alternate;
   -webkit-animation: glowing-text 2s linear infinite alternate;
   animation: glowing-text 2s linear infinite alternate;
+  cursor: url(./cursor.svg), pointer;
 }
 
 front {
@@ -86,7 +87,7 @@ img#bg {
   }
   h2 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-family: MagicSchoolOne, sans-serif;
   }
   a {
@@ -94,10 +95,18 @@ img#bg {
     padding: 0.5em 0.75em;
     margin-bottom: 1.5em;
     font-family: MagicSchoolOne, sans-serif;
-  }
-  a:hover {
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    -webkit-transition: all 2s;
+    &:hover {
       color: yellow;
       text-decoration: none;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      -webkit-transition: all 2s;
+    }
   }
 }
 
