@@ -4,6 +4,7 @@ $black_12: rgba(0, 0, 0, 0.12);
 $color_oslo_gray_approx: #8d9093;
 $color_mountain_mist_approx: #b3bbc8;
 $white: #ffffff;
+$grey: #595c62;
 
 //fonts
 $font_0: sans-serif;
@@ -27,6 +28,7 @@ body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #000;
   cursor: url(./cursor.svg), auto;
+  cursor: url(./cursor.svg), pointer;
 }
 
 html, body {
@@ -35,6 +37,15 @@ html, body {
 
 a {
   color: #00B7FF;
+}
+
+a:hover {
+  text-decoration: none;
+  -moz-animation: glowing-text 2s linear infinite alternate;
+  -ms-animation: glowing-text 2s linear infinite alternate;
+  -o-animation: glowing-text 2s linear infinite alternate;
+  -webkit-animation: glowing-text 2s linear infinite alternate;
+  animation: glowing-text 2s linear infinite alternate;
 }
 
 front {
@@ -79,11 +90,14 @@ img#bg {
     font-family: MagicSchoolOne, sans-serif;
   }
   a {
-    background: #00B7FF;
     color: white;
     padding: 0.5em 0.75em;
-    border-radius: 5px;
     margin-bottom: 1.5em;
+    font-family: MagicSchoolOne, sans-serif;
+  }
+  a:hover {
+      color: yellow;
+      text-decoration: none;
   }
 }
 
@@ -118,11 +132,11 @@ img#bg {
 
 #sponsors {
   background-color: transparent;
-  color: #494c52;
+  color: $grey;
 }
 
 #schedule, #team {
-  color: #494c52;
+  color: $grey;
 }
 
 #faq {
@@ -130,7 +144,7 @@ img#bg {
   padding-bottom: 50px;
   padding-left: 45px;
   padding-right: 45px;
-  color: #494c52;
+  color: $grey;
   h1 {
     font-size: 4em;
   }
@@ -196,8 +210,12 @@ img#bg {
   }
 }
 
+.portrait {
+  padding: 10px;
+}
+
 #resources {
-  color: #494c52;
+  color: $grey;
 
   .logo {
     width: 195px;
@@ -238,12 +256,12 @@ img#bg {
   position: relative;
   margin-top: 0px;
   .footer-joinus {
-    color: #494c52;
+    color: $grey;
     font-size: 24px;
     margin: 0;
   }
   .footer-copyright {
-    color: #494c52;
+    color: $grey;
     font-size: 14px;
     margin: 0;
   }
@@ -260,6 +278,16 @@ img#bg {
 
     margin-left: 3px;
   }
+  a:hover {
+      color: yellow;
+      text-decoration: none;
+      -moz-animation: glowing-text 2s linear infinite alternate;
+      -ms-animation: glowing-text 2s linear infinite alternate;
+      -o-animation: glowing-text 2s linear infinite alternate;
+      -webkit-animation: glowing-text 2s linear infinite alternate;
+      animation: glowing-text 2s linear infinite alternate;
+  }
+
 }
 
 @media(max-width: 600px) {
@@ -310,49 +338,49 @@ img#bg {
 
 @keyframes glowing-text {
   0% {
-    text-shadow: 0 0 0 white;
+    text-shadow: 0 0 0 yellow;
   }
   50% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px yellow;
   }
   100% {
-    text-shadow: 0 0 30px white;
+    text-shadow: 0 0 30px yellow;
   }
 }
 
 @-webkit-keyframes glowing-text {
   0% {
-    text-shadow: 0 0 0 white;
+    text-shadow: 0 0 0 yellow;
   }
   50% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px yellow;
   }
   100% {
-    text-shadow: 0 0 30px white;
+    text-shadow: 0 0 30px yellow;
   }
 }
 
 @-moz-keyframes glowing-text {
   0% {
-    text-shadow: 0 0 0 white;
+    text-shadow: 0 0 0 yellow;
   }
   50% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px yellow;
   }
   100% {
-    text-shadow: 0 0 30px white;
+    text-shadow: 0 0 30px yellow;
   }
 }
 
 @-ms-keyframes glowing-text {
   0% {
-    text-shadow: 0 0 0 white;
+    text-shadow: 0 0 0 yellow;
   }
   50% {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px yellow;
   }
   100% {
-    text-shadow: 0 0 30px white;
+    text-shadow: 0 0 30px yellow;
   }
 }
 

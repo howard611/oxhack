@@ -13,11 +13,12 @@ block content
         .content
           img#logo(src='images/logo_white.png')
           h2.glow-on-hover May 14 - 15, 2016
-          a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxfordhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
+          h1.glow-on-hover
+            a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxfordhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
     section#about
       .container
         .content
-          h3 OxfordHack was first organised in 2015 and this year we are returning with something magical. It's our little gimmick to add a bit more fun to what should already be an awesome weekend.
+          h3 After last year, the Oxford Entrepreneurs are returning with something magical.
     section#map-container
       .container
         #overlay
@@ -26,7 +27,7 @@ block content
       .container
         .row
           .col-md-12
-            h1
+            h1.glow-on-hover
               span FAQ
         .row
           .col-md-4
@@ -63,7 +64,7 @@ block content
       .container
         .row
           .col-md-12
-            h1
+            h1.glow-on-hover
               span Sponsors
             p OxfordHack gives companies the opportunity to get in touch with some of the most talented university students in Europe.
             p If you are interested or have any questions feel free to contact us at
@@ -72,7 +73,7 @@ block content
       .container
         .row
           .col-md-12
-            h1
+            h1.glow-on-hover
               span New to Hackathons?
             p Like any good school of magic, you don't need to be an experienced wizard or witch to come to OxfordHack. OxfordHack will be full of people willing to share their knowledge, help you learn, and build something magical. If you do want to get a head start before you come along, check out the below websites:
         .row
@@ -104,36 +105,41 @@ block content
       .container
         .row
           .col-md-12
-            h1
+            h1.glow-on-hover
               span Schedule
             p Coming soon!
     section#team
       .container
         .row
           .col-md-12
-            h1
+            h1.glow-on-hover
               span Team of Wizards and Witches
             .row
-              .col-md-4.logo
+              .col-md-4.portrait
                 span.helper
                 a(href="mailto:naomi@oxfordhack.com", target='_blank')
-                  <img src="images/naomi_small.gif" width="100%" height="100%" alt="Image size dimensions">
-              .col-md-2.logo
+                  <img class="portrait" src="images/naomi_small.gif" width="100%" height="100%" alt="Image size dimensions">
+              .col-md-3.portrait
                 span.helper
-                a(href="mailto:charlie@oxfordhack.com", target='_blank')
-                  <img src="images/charlie.png" width="100%" height="100%" alt="Image size dimensions">
-              .col-md-4.logo
+                a(href="mailto:owl@oxfordhack.com", target='_blank')
+                  <img class="portrait" src="images/kevin.gif" width="100%" height="100%" alt="Image size dimensions">
+              .col-md-4.portrait
                 span.helper
                 a(href="mailto:luke@oxfordhack.com", target='_blank')
-                  <img src="images/luke_small.gif" width="100%" height="100%" alt="Image size dimensions">
-              .col-md-2.logo
+                  <img class="portrait" src="images/luke2.gif" width="100%" height="100%" alt="Image size dimensions">
+            .row
+              .col-md-2.portrait
                 span.helper
                 a(href="mailto:howard@oxfordhack.com", target='_blank')
-                  <img src="images/howard.jpg" width="100%" height="100%" alt="Image size dimensions">
+                  <img class="portrait" src="images/howard.jpg" width="100%" height="100%" alt="Image size dimensions">
+              .col-md-2.portrait
+                span.helper
+                a(href="mailto:charlie@oxfordhack.com", target='_blank')
+                  <img class="portrait" src="images/charlie.png" width="100%" height="100%" alt="Image size dimensions">
 
   section#footer
     footer.footer-center
-      p.footer-joinus
+      p.footer-joinus.glow-on-hover
         span Join us on
       a(href='https://www.facebook.com/OxfordHack')
         i.fa.fa-facebook
@@ -143,6 +149,8 @@ block content
         i.fa.fa-envelope-o
       p.footer-copyright
         span OxfordHack © 2016
+      p.footer-copyright
+        span Created with magic by Howard, Kevin, and Naomi
 block scripts
   // jQuery (necessary for Bootstrap's JavaScript plugins)
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
