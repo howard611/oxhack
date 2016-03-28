@@ -6,7 +6,7 @@
   font-family: "AppleSDGothicNeo-Light", "Apple SD Gothic Neo Light", "HelveticaNeue-Light"; }
   * span {
     font-family: MagicSchoolOne, sans-serif;
-    color: #797c82; }
+    color: #F5F5F5; }
 
 body {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -21,6 +21,7 @@ a {
   color: #00B7FF; }
 
 a:hover {
+  color: yellow;
   text-decoration: none;
   -moz-animation: glowing-text 2s linear infinite alternate;
   -ms-animation: glowing-text 2s linear infinite alternate;
@@ -65,7 +66,7 @@ img#bg {
     margin-top: 0;
     margin-bottom: 0;
     font-family: MagicSchoolOne, sans-serif; }
-  .jumbotron a {
+  .jumbotron a, .jumbotron a:visited {
     color: white;
     padding: 0.5em 0.75em;
     margin-bottom: 1.5em;
@@ -74,7 +75,7 @@ img#bg {
     -ms-transition: all 2s;
     -o-transition: all 2s;
     -webkit-transition: all 2s; }
-    .jumbotron a:hover {
+    .jumbotron a:hover, .jumbotron a:active, .jumbotron a:visited:hover, .jumbotron a:visited:active {
       color: yellow;
       text-decoration: none;
       -moz-transition: all 2s;
@@ -107,17 +108,17 @@ img#bg {
 
 #sponsors {
   background-color: transparent;
-  color: #797c82; }
+  color: #F5F5F5; }
 
 #schedule, #team {
-  color: #797c82; }
+  color: #F5F5F5; }
 
 #faq {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 45px;
   padding-right: 45px;
-  color: #797c82; }
+  color: #F5F5F5; }
   #faq h1 {
     font-size: 4em; }
   #faq h3 {
@@ -176,7 +177,7 @@ img#bg {
   padding: 10px; }
 
 #resources {
-  color: #797c82; }
+  color: #F5F5F5; }
   #resources .logo {
     width: 195px;
     height: 50px;
@@ -208,11 +209,11 @@ img#bg {
   position: relative;
   margin-top: 0px; }
   .footer-center .footer-joinus {
-    color: #797c82;
+    color: #F5F5F5;
     font-size: 24px;
     margin: 0; }
   .footer-center .footer-copyright {
-    color: #797c82;
+    color: #F5F5F5;
     font-size: 14px;
     margin: 0; }
     .footer-center .footer-copyright a {
@@ -227,7 +228,7 @@ img#bg {
     text-align: center;
     line-height: 35px;
     margin-left: 3px; }
-  .footer-center a:hover {
+  .footer-center a:hover, .footer-center a:active {
     color: yellow;
     text-decoration: none;
     -moz-animation: glowing-text 2s linear infinite alternate;
@@ -356,7 +357,8 @@ img#bg {
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite; }
 
-.glow-on-hover:hover {
+.glow-on-hover:hover, .glow-on-hover:active {
+  color: yellow;
   -moz-animation: glowing-text 2s linear infinite alternate;
   -ms-animation: glowing-text 2s linear infinite alternate;
   -o-animation: glowing-text 2s linear infinite alternate;

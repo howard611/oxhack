@@ -4,7 +4,8 @@ $black_12: rgba(0, 0, 0, 0.12);
 $color_oslo_gray_approx: #8d9093;
 $color_mountain_mist_approx: #b3bbc8;
 $white: #ffffff;
-$grey: #797c82;
+// $grey: #797c82;
+$grey: #F5F5F5;
 
 //fonts
 $font_0: sans-serif;
@@ -21,7 +22,7 @@ $breakpoint-mobile: 800px;
   font-family: "AppleSDGothicNeo-Light", "Apple SD Gothic Neo Light", "HelveticaNeue-Light";
   span {
     font-family: MagicSchoolOne, sans-serif;
-    color: #797c82;
+    color: $grey;
   }
 }
 
@@ -41,6 +42,7 @@ a {
 }
 
 a:hover {
+  color:yellow;
   text-decoration: none;
   -moz-animation: glowing-text 2s linear infinite alternate;
   -ms-animation: glowing-text 2s linear infinite alternate;
@@ -95,7 +97,7 @@ img#bg {
     margin-bottom: 0;
     font-family: MagicSchoolOne, sans-serif;
   }
-  a {
+  a, a:visited {
     color: white;
     padding: 0.5em 0.75em;
     margin-bottom: 1.5em;
@@ -104,7 +106,7 @@ img#bg {
     -ms-transition: all 2s;
     -o-transition: all 2s;
     -webkit-transition: all 2s;
-    &:hover {
+    &:hover, &:active {
       color: yellow;
       text-decoration: none;
       -moz-transition: all 2s;
@@ -295,7 +297,7 @@ img#bg {
 
     margin-left: 3px;
   }
-  a:hover {
+  a:hover, a:active {
       color: yellow;
       text-decoration: none;
       -moz-animation: glowing-text 2s linear infinite alternate;
@@ -440,7 +442,8 @@ img#bg {
 }
 
 .glow-on-hover {
-  &:hover {
+  &:hover, &:active {
+    color:yellow;
     -moz-animation: glowing-text 2s linear infinite alternate;
     -ms-animation: glowing-text 2s linear infinite alternate;
     -o-animation: glowing-text 2s linear infinite alternate;
