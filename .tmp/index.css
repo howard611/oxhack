@@ -18,7 +18,10 @@ html, body {
   height: 100%; }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+  text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
 
 a:hover {
   color: yellow;
@@ -29,6 +32,10 @@ a:hover {
   -webkit-animation: glowing-text 2s linear infinite alternate;
   animation: glowing-text 2s linear infinite alternate;
   cursor: url(./cursor.svg), pointer; }
+
+a:active {
+  text-decoration: none;
+  color: yellow; }
 
 front {
   z-index: 4; }
@@ -66,8 +73,9 @@ img#bg {
     margin-top: 0;
     margin-bottom: 0;
     font-family: MagicSchoolOne, sans-serif; }
-  .jumbotron a, .jumbotron a:visited {
-    color: white;
+  .jumbotron a {
+    color: yellow;
+    text-decoration: none;
     padding: 0.5em 0.75em;
     margin-bottom: 1.5em;
     font-family: MagicSchoolOne, sans-serif;
@@ -75,13 +83,11 @@ img#bg {
     -ms-transition: all 2s;
     -o-transition: all 2s;
     -webkit-transition: all 2s; }
-    .jumbotron a:hover, .jumbotron a:active, .jumbotron a:visited:hover, .jumbotron a:visited:active {
-      color: yellow;
-      text-decoration: none;
-      -moz-transition: all 2s;
-      -ms-transition: all 2s;
-      -o-transition: all 2s;
-      -webkit-transition: all 2s; }
+  .jumbotron a:active {
+    color: yellow;
+    text-decoration: none; }
+  .jumbotron a:visited {
+    color: white; }
 
 #about, #sponsors, #resources, #schedule, #team {
   background-color: transparent;
@@ -218,6 +224,12 @@ img#bg {
     margin: 0; }
     .footer-center .footer-copyright a {
       font-family: MagicSchoolOne; }
+      .footer-center .footer-copyright a:visited {
+        text-decoration: none;
+        color: white; }
+      .footer-center .footer-copyright a:active {
+        text-decoration: none;
+        color: yellow; }
   .footer-center a {
     display: inline-block;
     width: 35px;
@@ -227,7 +239,8 @@ img#bg {
     color: #b3bbc8;
     text-align: center;
     line-height: 35px;
-    margin-left: 3px; }
+    margin-left: 3px;
+    text-decoration: none; }
   .footer-center a:hover, .footer-center a:active {
     color: yellow;
     text-decoration: none;
@@ -236,6 +249,9 @@ img#bg {
     -o-animation: glowing-text 2s linear infinite alternate;
     -webkit-animation: glowing-text 2s linear infinite alternate;
     animation: glowing-text 2s linear infinite alternate; }
+  .footer-center a:visited, .footer-center a:active {
+    color: yellow;
+    text-decoration: none; }
 
 @media (max-width: 600px) {
   .footer-center {
@@ -357,10 +373,19 @@ img#bg {
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite; }
 
-.glow-on-hover:hover, .glow-on-hover:active {
-  color: yellow;
-  -moz-animation: glowing-text 2s linear infinite alternate;
-  -ms-animation: glowing-text 2s linear infinite alternate;
-  -o-animation: glowing-text 2s linear infinite alternate;
-  -webkit-animation: glowing-text 2s linear infinite alternate;
-  animation: glowing-text 2s linear infinite alternate; }
+.glow-on-hover {
+  text-decoration: none; }
+  .glow-on-hover a:hover {
+    color: yellow;
+    -moz-animation: glowing-text 2s linear infinite alternate;
+    -ms-animation: glowing-text 2s linear infinite alternate;
+    -o-animation: glowing-text 2s linear infinite alternate;
+    -webkit-animation: glowing-text 2s linear infinite alternate;
+    animation: glowing-text 2s linear infinite alternate; }
+  .glow-on-hover a:active {
+    color: yellow;
+    -moz-animation: glowing-text 2s linear infinite alternate;
+    -ms-animation: glowing-text 2s linear infinite alternate;
+    -o-animation: glowing-text 2s linear infinite alternate;
+    -webkit-animation: glowing-text 2s linear infinite alternate;
+    animation: glowing-text 2s linear infinite alternate; }

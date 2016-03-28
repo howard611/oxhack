@@ -39,6 +39,10 @@ html, body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+  &:visited {
+  text-decoration: none;  
+  }
 }
 
 a:hover {
@@ -50,6 +54,11 @@ a:hover {
   -webkit-animation: glowing-text 2s linear infinite alternate;
   animation: glowing-text 2s linear infinite alternate;
   cursor: url(./cursor.svg), pointer;
+}
+
+a:active {
+  text-decoration: none;
+  color: yellow;
 }
 
 front {
@@ -97,8 +106,9 @@ img#bg {
     margin-bottom: 0;
     font-family: MagicSchoolOne, sans-serif;
   }
-  a, a:visited {
-    color: white;
+  a {
+    color: yellow;
+    text-decoration: none;
     padding: 0.5em 0.75em;
     margin-bottom: 1.5em;
     font-family: MagicSchoolOne, sans-serif;
@@ -106,14 +116,15 @@ img#bg {
     -ms-transition: all 2s;
     -o-transition: all 2s;
     -webkit-transition: all 2s;
-    &:hover, &:active {
-      color: yellow;
-      text-decoration: none;
-      -moz-transition: all 2s;
-      -ms-transition: all 2s;
-      -o-transition: all 2s;
-      -webkit-transition: all 2s;
-    }
+  }
+
+  a:active {
+    color: yellow;
+    text-decoration: none;  
+  }
+
+  a:visited {
+    color: white;
   }
 }
 
@@ -282,6 +293,13 @@ img#bg {
     margin: 0;
     a {
       font-family: MagicSchoolOne;
+      &:visited {
+        text-decoration: none;
+        color: white;      }
+      &:active {
+        text-decoration: none;
+        color: yellow;
+      }
     }
   }
   a {
@@ -296,6 +314,7 @@ img#bg {
     line-height: 35px;
 
     margin-left: 3px;
+    text-decoration: none;
   }
   a:hover, a:active {
       color: yellow;
@@ -306,7 +325,10 @@ img#bg {
       -webkit-animation: glowing-text 2s linear infinite alternate;
       animation: glowing-text 2s linear infinite alternate;
   }
-
+  a:visited, a:active {
+    color: yellow;
+    text-decoration: none;
+  }
 }
 
 @media(max-width: 600px) {
@@ -442,7 +464,16 @@ img#bg {
 }
 
 .glow-on-hover {
-  &:hover, &:active {
+  text-decoration: none;  
+  a:hover {
+    color:yellow;
+    -moz-animation: glowing-text 2s linear infinite alternate;
+    -ms-animation: glowing-text 2s linear infinite alternate;
+    -o-animation: glowing-text 2s linear infinite alternate;
+    -webkit-animation: glowing-text 2s linear infinite alternate;
+    animation: glowing-text 2s linear infinite alternate;
+  }
+  a:active {
     color:yellow;
     -moz-animation: glowing-text 2s linear infinite alternate;
     -ms-animation: glowing-text 2s linear infinite alternate;

@@ -11,7 +11,8 @@ block content
     section#canvas
       .jumbotron
         .content
-          img#logo(src='images/logo_white.png')
+          a(href="http://www.oxfordhack.com")
+            img#logo(src='images/logo_white.png')
           h2.glow-on-hover May 14 - 15, 2016
           h1.glow-on-hover: a(href='http://www.oxfordhack.com') Applications Starting Soon
           //-          h1.glow-on-hover: a(href='http://my.mlh.io/oauth/authorize?client_id=25cec58cf6428c907062132f2fc53b817348d2512dd02b0874a60689e1b7f0c7&redirect_uri=http%3A%2F%2Foxfordhack.herokuapp.com%2Fsuccess&response_type=token') Apply Now
@@ -19,7 +20,7 @@ block content
       .container
         .content
           h3 After last year, the  
-            a(href='http://oxfordentrepreneurs.co.uk/') Oxford Entrepreneurs
+            a(href='http://oxfordentrepreneurs.co.uk/', target='_blank') Oxford Entrepreneurs
             |  are returning with something magical.
     section#map-container
       .container
@@ -31,8 +32,8 @@ block content
         .row
           .col-md-12
             h1.glow-on-hover
-              a(name='faq')
-              span FAQ
+              a(name='faq' href="#faq")
+                span FAQ
         .row
           .col-md-4
             h3 What is a Hackathon?
@@ -46,7 +47,7 @@ block content
          .row
           .col-md-4
             h3 Do you have a code of conduct?
-            a(href='http://static.mlh.io/docs/mlh-code-of-conduct.pdf') Yes
+            a(href='http://static.mlh.io/docs/mlh-code-of-conduct.pdf', target='_blank') Yes
             | . tl;dr: Be nice to each other.
           .col-md-4
             h3 What can I build?
@@ -63,24 +64,24 @@ block content
             p All attendees must bring a valid ID for admission. Other common checklist items include: laptops, sleeping bags, chargers and toiletries.
           .col-md-4
             h3 What if I have another question?
-            p Send us an owl at #[a(href='mailto:owl@oxfordhack.com') owl@oxfordhack.com]
+            p Send us an owl at #[a(href='mailto:owl@oxfordhack.com', target='_blank') owl@oxfordhack.com]
     section#sponsors
       .container
         .row
           .col-md-12
             h1.glow-on-hover
-              a(name='sponsors')
-              span Sponsors
+              a(name='sponsors' href="#sponsors")
+                span Sponsors
             p OxfordHack gives companies the opportunity to get in touch with some of the most talented university students in Europe.
             p If you are interested or have any questions feel free to contact us at
-              a(href='mailto:owl@oxfordhack.com')  owl@oxfordhack.com
+              a(href='mailto:owl@oxfordhack.com', target='_blank')  owl@oxfordhack.com
     section#resources
       .container
         .row
           .col-md-12
             h1.glow-on-hover
-              a(name='resources')
-              span New to Hackathons?
+              a(name='resources' href="#resources")
+                span New to Hackathons?
             p Like any good school of magic, you don't need to be an experienced wizard or witch to come to OxfordHack. OxfordHack will be full of people willing to share their knowledge, help you learn, and build something magical. If you do want to get a head start before you come along, check out the below websites:
         .row
           .col-xs-2.logo
@@ -112,16 +113,16 @@ block content
         .row
           .col-md-12
             h1.glow-on-hover
-              a(name='schedule')
-              span Schedule
+              a(name='schedule' href="#schedule")
+                span Schedule
             p Coming soon!
     section#team
       .container
         .row
           .col-md-12
             h1.glow-on-hover
-              a(name='team')
-              span Team of Wizards and Witches
+              a(name='team' href="#team")
+                span Team of Wizards and Witches
             .row
               .col-md-4.portrait
                 a(href="mailto:naomi@oxfordhack.com", target='_blank')
@@ -143,16 +144,16 @@ block content
     footer.footer-center
       p.footer-joinus.glow-on-hover
         span Join us on
-      a(href='https://www.facebook.com/OxfordHack')
+      a(href='https://www.facebook.com/OxfordHack', target='_blank')
         i.fa.fa-facebook
-      a(href='https://twitter.com/oxfordhackathon')
+      a(href='https://twitter.com/oxfordhackathon', target='_blank')
         i.fa.fa-twitter
-      a(href='mailto:owl@oxfordhack.com')
+      a(href='mailto:owl@oxfordhack.com', target='_blank')
         i.fa.fa-envelope-o
       p.footer-copyright
         span OxfordHack © 2016
       p.footer-copyright
-        span Created with magic by #[a(href='https://github.com/howard611') Howard] , #[a(href='http://twitter.com/_phzn', target="_blank") Kevin], and #[a(href='https://github.com/npentrel') Naomi]
+        span Created with magic by #[a(href='https://github.com/howard611', target='_blank') Howard] , #[a(href='http://twitter.com/_phzn', target="_blank") Kevin], and #[a(href='https://github.com/npentrel', target='_blank') Naomi]
 block scripts
   // jQuery (necessary for Bootstrap's JavaScript plugins)
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
