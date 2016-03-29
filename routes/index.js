@@ -15,7 +15,7 @@ router.post('/success', function(req, res) {
   var fields = req.body;
 
   var applicant = new Applicant({
-    id: 124,
+    id: fields.id,
     linkedin: fields.linkedin,
     twitter: fields.twitter,
     github: fields.github,

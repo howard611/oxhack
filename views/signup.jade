@@ -15,7 +15,8 @@ block content
             .col-md-12
               h1.glow-on-hover: a(href='http://oxfordhack.herokuapp.com') Hold on ... just a few more questions before finishing!
           .row
-            form.form-horizontal(action='/success', method='post')
+            form#signupForm.form-horizontal(action='/success', method='post')
+              input#id(type='hidden', name='id')
               .form-group
                 label.col-sm-2.control-label(for='inputLinkedIn') LinkedIn
                 .col-sm-10
@@ -35,3 +36,8 @@ block content
               .form-group
                 .col-sm-offset-2.col-sm-10
                   button.btn.btn-primary(type='submit') Submit
+block scripts
+  // jQuery (necessary for Bootstrap's JavaScript plugins)
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  // Custom JS
+  script(src='javascripts/signup.js')
