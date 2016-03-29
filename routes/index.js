@@ -10,4 +10,12 @@ router.get('/success', function(req, res, next) {
   res.render('complete');
 });
 
+router.post('/success', function(req, res, next) {
+  res.redirect('/success');
+});
+
+router.get('/signup', function(req, res, next) {
+  res.render('signup');
+});
+
 module.exports = router;
