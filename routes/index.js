@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var Applicant = require('../models/applicant.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,8 +11,25 @@ router.get('/success', function(req, res, next) {
   res.render('complete');
 });
 
-router.post('/success', function(req, res, next) {
-  res.redirect('/success');
+router.post('/success', function(req, res) {
+  var fields = req.body;
+
+  var applicant = new Applicant({
+    id: 124,
+    linkedin: fields.linkedin,
+    twitter: fields.twitter,
+    github: fields.github,
+    resume: fields.resume
+  });
+
+  applicant.save(function(err) {
+    if (err) {
+      console.log("ERROR: " + err);
+    }
+
+    console.log('Applicant added!');
+    res.redirect('/success');
+  });
 });
 
 router.get('/signup', function(req, res, next) {
