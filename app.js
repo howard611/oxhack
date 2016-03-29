@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var uristring = process.env.MONGOLAB_URI || 'mongodb://localhost/oxfordhack';
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -26,7 +27,13 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static('./'));
 app.use(express.static('./tmp'));
 
-mongoose.connect('mongodb://localhost/oxfordhack');
+mongoose.connect(uristring, function(err, res) {
+  if (err) {
+    console.log('ERROR connecting to: ' + uristring + '. ' + err);
+  } else {
+    console.log('Succeeded connected to: ' + uristring);
+  }
+});
 
 app.use('/', routes);
 app.use('/users', users);
