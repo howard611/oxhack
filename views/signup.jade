@@ -17,6 +17,7 @@ block content
           .row
             form#signupForm.form-horizontal(action='/success', method='post')
               input#id(type='hidden', name='id')
+              input#resumeLink(type='hidden', name='resumeLink')
               .form-group
                 label.col-sm-2.control-label(for='inputLinkedIn') LinkedIn
                 .col-sm-10
@@ -32,7 +33,7 @@ block content
               .form-group
                 label.col-sm-2.control-label(for='inputResume') CV Upload (optional)
                 .col-sm-10
-                  input#inputResume.form-control(type='text', placeholder='Upload', name='resume')
+                  input#inputResume.form-control(type='file', name='resume')
               .form-group
                 .col-sm-offset-2.col-sm-10
                   button.btn.btn-primary(type='submit') Submit
