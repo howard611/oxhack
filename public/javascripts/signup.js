@@ -45,6 +45,8 @@ $(document).ready(function() {
       var files = document.getElementById("inputResume").files;
       var file = files[0];
 
+      $('#signupForm p').removeClass('hidden');
+
       $.get(getUrl, function(data) {
         $('input#id').val(data.data.id);
         if (file === null) {
