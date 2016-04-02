@@ -60,4 +60,14 @@ $(document).ready(function() {
       alert('Missing access_token. Please try again.');
     }
   });
+
+  var text_max = 1200;
+  $('#count_text').html(text_max + ' characters remaining');
+
+  $('#inputReason').keyup(function() {
+    var text_length = $('#inputReason').val().length;
+    var text_remaining = text_max - text_length;
+
+    $('#count_text').html(text_remaining + ' characters remaining');
+  });
 });

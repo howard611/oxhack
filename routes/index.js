@@ -46,7 +46,10 @@ router.post('/success', function(req, res) {
     linkedin: fields.linkedin,
     twitter: fields.twitter,
     github: fields.github,
-    resume: fields.resumeLink
+    personal: fields.personal,
+    devpost: fields.devpost,
+    resume: fields.resumeLink,
+    reason: fields.reason
   });
 
   applicant.save(function(err) {

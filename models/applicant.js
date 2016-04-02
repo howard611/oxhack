@@ -6,6 +6,9 @@ var applicantSchema = new Schema({
   linkedin: String,
   twitter: String,
   github: String,
+  personal: String,
+  devpost: String,
+  reason: String,
   resume: String
 });
 
