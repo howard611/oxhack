@@ -15,6 +15,14 @@ block content
             .col-md-12
               h1.glow-on-hover: a(href='#') Hold on ... just a few more questions before finishing!
           .row
+            .col-md-12
+              h3 We ask for the following details:
+              h4
+                ul
+                  li to share them with the sponsors that will pay for everything from food to travel reimbursements for you. While CVs are optional we would really appreciate you uploading them. This might also get you a job...
+                  li to learn more about you. We are NOT looking for you to already know everything. We welcome beginners and seasoned hackers equally. However we need to ensure that there is a good mix of people.
+          hr(style='margin-bottom:30px;')
+          .row
             form#signupForm.form-horizontal(action='/success', method='post')
               input#id(type='hidden', name='id')
               input#resumeLink(type='hidden', name='resumeLink')
