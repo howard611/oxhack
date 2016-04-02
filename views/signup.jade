@@ -111,6 +111,24 @@ block content
                       input(type='checkbox', name='personality', value='')
                       |  none of the above
               .form-group
+                .col-sm-2.control-label(for='inputResume') Which Deathly Hallow would you choose?
+                  h6 (Watch the video if you don't understand this question)
+                .col-sm-10
+                  .col-sm-2
+                    h5
+                      input(type='radio', name='deathlyHallow', value='wand')
+                      |  wand
+                  .col-sm-2
+                    h5
+                      input(type='radio', name='deathlyHallow', value='stone')
+                      |  stone
+                  .col-sm-2
+                    h5
+                      input(type='radio', name='deathlyHallow', value='cloak')
+                      |  cloak
+                .col-sm-10
+                  iframe(width='560', height='315', src='https://www.youtube.com/embed/TgmEEDyeDv8', frameborder='0', allowfullscreen='')
+              .form-group
                   .col-sm-2.control-label(for='inputReason') Why do you want to come?
                   .col-sm-10
                     textarea#inputReason.form-control(name='reason', rows='11', maxlength='1200', placeholder='Maximum 1200 characters...', style='resize: none;')

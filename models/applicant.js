@@ -8,6 +8,7 @@ var applicantSchema = new Schema({
   github: String,
   personal: String,
   personality: [String],
+  deathlyHallow: String,
   devpost: String,
   reason: String,
   resume: String
