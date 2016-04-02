@@ -49,10 +49,10 @@ $(document).ready(function() {
 
       $.get(getUrl, function(data) {
         $('input#id').val(data.data.id);
-        if (file === null) {
-          $('#signupForm').submit();
-        } else {
+        if (file) {
           get_signed_request(file);
+        } else {
+          $('#signupForm').submit();
         }
       });
 
