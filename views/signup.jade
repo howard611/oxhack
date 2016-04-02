@@ -47,8 +47,10 @@ block content
                 .col-sm-10
                   textarea#inputReason.form-control(name='reason', rows='11', maxlength='1200', placeholder='Maximum 1200 characters...', style='resize: none;')
                   h6#count_text.pull-right
-                  button.btn.btn-primary(type='submit', style='margin-top:13px;') Submit
-                  p.hidden Loading...
+              .form-group.text-center
+                h6 In applying you agree that OxfordHack can share your information with selected sponsors.
+                button.btn.btn-primary(type='submit') Submit
+                p.hidden Loading...
 block scripts
   // jQuery (necessary for Bootstrap's JavaScript plugins)
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
