@@ -47,6 +47,7 @@ router.post('/success', function(req, res) {
     twitter: fields.twitter,
     github: fields.github,
     personal: fields.personal,
+    personality: fields.personality,
     devpost: fields.devpost,
     resume: fields.resumeLink,
     reason: fields.reason

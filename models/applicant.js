@@ -7,6 +7,7 @@ var applicantSchema = new Schema({
   twitter: String,
   github: String,
   personal: String,
+  personality: [String],
   devpost: String,
   reason: String,
   resume: String

@@ -27,31 +27,91 @@ block content
               input#id(type='hidden', name='id')
               input#resumeLink(type='hidden', name='resumeLink')
               .form-group
-                label.col-sm-2.control-label(for='inputLinkedIn') LinkedIn
+                .col-sm-2.control-label(for='inputLinkedIn') LinkedIn
                 .col-sm-10
                   input#inputLinkedIn.form-control(type='text', placeholder='Link', name='linkedin')
               .form-group
-                label.col-sm-2.control-label(for='inputTwitter') Twitter
+                .col-sm-2.control-label(for='inputTwitter') Twitter
                 .col-sm-10
                   input#inputTwitter.form-control(type='text', placeholder='Link', name='twitter')
               .form-group
-                label.col-sm-2.control-label(for='inputGithub') Github
+                .col-sm-2.control-label(for='inputGithub') Github
                 .col-sm-10
                   input#inputGithub.form-control(type='text', placeholder='Link', name='github')
               .form-group
-                label.col-sm-2.control-label(for='inputPersonal') Devpost
+                .col-sm-2.control-label(for='inputPersonal') Devpost
                 .col-sm-10
                   input#inputPersonal.form-control(type='text', placeholder='Link', name='personal')
               .form-group
-                label.col-sm-2.control-label(for='inputDevpost') Personal Website
+                .col-sm-2.control-label(for='inputDevpost') Personal Website
                 .col-sm-10
                   input#inputDevpost.form-control(type='text', placeholder='Link', name='devpost')
               .form-group
-                label.col-sm-2.control-label(for='inputResume') CV Upload (optional)
+                .col-sm-2.control-label(for='inputResume') CV Upload (optional)
                 .col-sm-10
                   input#inputResume.form-control(type='file', name='resume')
               .form-group
-                label.col-sm-2.control-label(for='inputReason') Why do you want to come?
+                .col-sm-2.control-label(for='inputResume') Which adjectives would your friends use to describe you?
+                  h6 (Choose up to 3)
+                .col-sm-10
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='daring')
+                      |  daring
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='cunning')
+                      |  cunning
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='chivalrous')
+                      |  chivalrous
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='wise')
+                      |  wise
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='just')
+                      |  just
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='patient')
+                      |  patient
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='hardworking')
+                      |  hardworking
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='ambitious')
+                      |  ambitious
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='loyal')
+                      |  loyal
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='witty')
+                      |  witty
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='clever')
+                      |  clever
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='brave')
+                      |  brave
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='scheming')
+                      |  scheming
+                  .col-sm-2
+                    h5
+                      input(type='checkbox', name='personality', value='')
+                      |  none of the above
+            .form-group
+                .col-sm-2.control-label(for='inputReason') Why do you want to come?
                 .col-sm-10
                   textarea#inputReason.form-control(name='reason', rows='11', maxlength='1200', placeholder='Maximum 1200 characters...', style='resize: none;')
                   h6#count_text.pull-right

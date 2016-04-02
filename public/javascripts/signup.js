@@ -61,6 +61,7 @@ $(document).ready(function() {
     }
   });
 
+  // Display remaining characters for textarea
   var text_max = 1200;
   $('#count_text').html(text_max + ' characters remaining');
 
@@ -69,5 +70,16 @@ $(document).ready(function() {
     var text_remaining = text_max - text_length;
 
     $('#count_text').html(text_remaining + ' characters remaining');
+  });
+
+  // Disable checkboxes after 3 have been selected
+  $('input:checkbox').click(function() {
+    var checkedBoxes = $('input:checked').length;
+
+    if (checkedBoxes >= 3) {
+      $('input:checkbox:not(:checked)').attr('disabled', true);
+    } else {
+      $('input:checkbox:not(:checked)').removeAttr('disabled');
+    }
   });
 });
