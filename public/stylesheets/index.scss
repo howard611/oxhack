@@ -41,7 +41,7 @@ a {
   color: #00B7FF;
   text-decoration: none;
   &:visited {
-  text-decoration: none;  
+  text-decoration: none;
   }
 }
 
@@ -120,7 +120,7 @@ img#bg {
 
   a:active {
     color: yellow;
-    text-decoration: none;  
+    text-decoration: none;
   }
 
   a:visited {
@@ -249,7 +249,7 @@ img#bg {
     height: 50px;
     text-align: center;
     margin-top: 35px;
-  
+
     .helper {
       display: inline-block;
       height: 100%;
@@ -326,7 +326,6 @@ img#bg {
       animation: glowing-text 2s linear infinite alternate;
   }
   a:visited, a:active {
-    color: yellow;
     text-decoration: none;
   }
 }
@@ -464,7 +463,7 @@ img#bg {
 }
 
 .glow-on-hover {
-  text-decoration: none;  
+  text-decoration: none;
   a:hover {
     color:yellow;
     -moz-animation: glowing-text 2s linear infinite alternate;
