@@ -155,6 +155,9 @@ img#bg {
 #schedule, #team {
   color: #F5F5F5; }
 
+#schedule table td {
+  font-size: 0.7em; }
+
 #faq {
   padding-top: 50px;
   padding-bottom: 50px;
