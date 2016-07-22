@@ -35,7 +35,7 @@ function initMap() {
   map.setMapTypeId('map_style');
 
   ouMarker = new google.maps.Marker({
-    position: new google.maps.LatLng(51.7605458, -1.2642887),
+    position: new google.maps.LatLng(51.760332, -1.2630864),
     map: map,
     title: "OxfordHack at University of Oxford"
   });
