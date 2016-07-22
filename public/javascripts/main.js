@@ -35,13 +35,13 @@ function initMap() {
   map.setMapTypeId('map_style');
 
   ouMarker = new google.maps.Marker({
-    position: new google.maps.LatLng(51.7603532, -1.2651685),
+    position: new google.maps.LatLng(51.7603205, -1.2630433),
     map: map,
     title: "OxfordHack at University of Oxford"
   });
 
   return google.maps.event.addListener(ouMarker, 'click', function() {
-    return window.open("https://www.google.co.uk/maps/place/Mathematical+Institute/@51.7603532,-1.2651685,17z/data=!3m1!4b1!4m5!3m4!1s0x4876c6a76879a4eb:0x14fcdb0deacb3a22!8m2!3d51.7603532!4d-1.2629798", "_blank");
+    return window.open("https://www.google.co.uk/maps/place/Mathematical+Institute/@51.7603205,-1.2630433,21z/data=!4m5!3m4!1s0x4876c6a76879a4eb:0x14fcdb0deacb3a22!8m2!3d51.7603532!4d-1.2629798", "_blank");
   });
 }
 
