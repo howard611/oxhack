@@ -98,7 +98,6 @@ img#bg {
     font-size: 0.9em; }
 
 #about {
-  background: url(/images/bg/bg_landscape.png);
   background-size: cover;
   background-position: bottom;
   min-height: 400px; }
@@ -138,12 +137,11 @@ img#bg {
 
 #map-container {
   display: block;
-  background: url(/images/bg/bg_animals.png);
   background-position: center bottom;
   background-size: cover;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  height: calc(400px + 30vw); }
+  height: calc(400px + 20vw); }
   #map-container #overlay {
     height: 400px;
     width: inherit;
@@ -184,6 +182,9 @@ img#bg {
 
 .portrait {
   padding: 10px; }
+
+#schedule .cent {
+  text-align: center; }
 
 #sponsors .logoSilver {
   text-align: center;
