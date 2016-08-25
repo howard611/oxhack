@@ -185,16 +185,19 @@ img#bg {
 .portrait {
   padding: 10px; }
 
-#sponsors .logo {
-  width: 390px;
+#sponsors .logoSilver {
   text-align: center;
   margin-top: 35px;
-  margin-bottom: 35px; }
-  #sponsors .logo .helper {
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto; }
+  #sponsors .logoSilver img {
+    width: 487.5px; }
+  #sponsors .logoSilver .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  #sponsors .logo a img {
+  #sponsors .logoSilver a img {
     max-width: 100%;
     max-height: 100%;
     vertical-align: middle; }
