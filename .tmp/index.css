@@ -186,19 +186,30 @@ img#bg {
 #schedule .cent {
   text-align: center; }
 
-#sponsors .logoSilver {
+#sponsors .logoGalleon {
+  max-width: 585px;
+  min-width: 300px;
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 55px;
-  margin-left: auto;
-  margin-right: auto; }
-  #sponsors .logoSilver img {
-    width: 487.5px; }
-  #sponsors .logoSilver .helper {
+  margin-top: 35px; }
+  #sponsors .logoGalleon .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  #sponsors .logoSilver a img {
+  #sponsors .logoGalleon a img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle; }
+
+#sponsors .logoSickle {
+  max-width: 390px;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 35px; }
+  #sponsors .logoSickle .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  #sponsors .logoSickle a img {
     max-width: 100%;
     max-height: 100%;
     vertical-align: middle; }
